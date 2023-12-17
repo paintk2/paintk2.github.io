@@ -14,19 +14,24 @@
     <!-- Style Parameters -->
     <style type = "text/css">
 
-      img {
-        border-radius: 50%;
-        max-width: 30%;
-        max-height: 30%;
-        padding: 4em;
-        float: right;
+      .main-container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
-      .navbar-nav {
+      img {
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: auto;
+        padding: 4em;
+        display: inline-block;
+      }
+
+      .navbar {
         font-family: garamond;
         font-size: larger;
         font-weight: bold;
-        display: block;
         text-align: center;
       }
 
@@ -34,45 +39,46 @@
         font-size: 20px;
         padding-left: 20px;
         padding-top: 20%;
-        float: center;
       }
 
     </style>
 
   </head>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Kathryn Painter</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">CV</a></li>
-        <li><a href="https://github.com/paintk2" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/kathryn-painter/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>
-  </nav>
+  <body> 
 
-  <body>
+    <div class = "container-fluid main-container"> 
 
-    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Kathryn Painter</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#">CV</a></li>
+            <li><a href="https://github.com/paintk2" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kathryn-painter/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
 
-      <div class = "image">
+      <div class="row">
 
-        <img src="./images/head_shot.jpg">
-
-      </div>
-
-      <div> 
-
-        <div class = "text">
+        <div class = "col-md-5">
 
           <p>Placeholder for summary about myself</p>
 
         </div>
 
-      </div>
+       </div>
+
+        <div class = "col-md-6">
+
+          <img src="./images/head_shot.jpg">
+
+        </div>
+
+       </div>
 
     </div>
 
